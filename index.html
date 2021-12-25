@@ -4,7 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>CV</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Yury Kalenkou</h1>
+
+    <h2>FullStack JavaScript Developer</h2>
+
+    <h2>Contact information</h2>
+
+    <ul>
+      <li>Location: Belarus, Minsk</li>
+      <li>Phone: +375259021655</li>
+      <li>E-mail: goldyukol12@gmail.com</li>
+      <li>Github: <a href="https://github.com/goldyukol">link</a></li>
+      <li>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/yury-kalenkou-431a5b191/">link</a>
+      </li>
+    </ul>
+
+    <h2>Summary</h2>
+
+    <p>
+      I am a highly competent IT professional with a proven track record in
+      JavaScript development, React , React Native, NextJS, NodeJS, MongoDB. I
+      have strong technical skills as well as excellent interpersonal skills,
+      enabling me to interact with a wide range of clients. I am eager to be
+      challenged in order to grow and further improve my IT skills. My greatest
+      passion in life is using my technical know-how to benefit other people and
+      organizations.
+    </p>
+
+    <h2>Skills and Proficiency</h2>
+
+    <ul>
+      <li>HTML, CSS, SASS, SCSS</li>
+      <li>JavaScript, TypeScript, JSON</li>
+      <li>React, Redux, NextJS</li>
+      <li>React Native, React Navigation</li>
+      <li>NodeJS, Express, MongoDB</li>
+      <li>Git, GitHub, BitBucket, Agile</li>
+      <li>Algorithms</li>
+      <li>Gulp, Webpack</li>
+      <li>VS Code, Figma</li>
+      <li>Interviewing</li>
+    </ul>
+
+    <h2>Code example</h2>
+
+    <code>
+      <pre>
+        function findSmallestIndex(array) {
+        let smallestElement = array[0];
+        let smallestIndex = 0;
+      
+        for (let i = 1; i < array.length; i++) {
+          if (array[i] < smallestElement) {
+            smallestElement = array[i];
+            smallestIndex = i;
+          }
+        }
+      
+        return smallestIndex;
+      }
+      
+      function selectionSort(array) {
+        let sortedArray = [];
+        let length = array.length;
+      
+        for (let i = 0; i < length; i++) {
+          let smallestIndex = findSmallestIndex(array);
+          sortedArray.push(array.splice(smallestIndex, 1)[0]);
+        }
+      
+        return sortedArray;
+      }
+      
+      console.log(selectionSort([5, 3, 6, 2, 10]));
+    </pre
+      >
+    </code>
+  </body>
 </html>
