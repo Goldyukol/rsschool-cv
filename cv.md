@@ -42,3 +42,88 @@ organizations.
 
 ---
 
+## Code example:
+
+### Binary search implementation
+
+```
+function findSmallestIndex(array) {
+  let smallestElement = array[0];
+  let smallestIndex = 0;
+
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < smallestElement) {
+      smallestElement = array[i];
+      smallestIndex = i;
+    }
+  }
+
+  return smallestIndex;
+}
+
+function selectionSort(array) {
+  let sortedArray = [];
+  let length = array.length;
+
+  for (let i = 0; i < length; i++) {
+    let smallestIndex = findSmallestIndex(array);
+    sortedArray.push(array.splice(smallestIndex, 1)[0]);
+  }
+
+  return sortedArray;
+}
+
+console.log(selectionSort([5, 3, 6, 2, 10]));
+```
+
+## Education:
+
+- BSUCA – Faculty of Information and Document Communications, Cultural herirage and
+  tourism
+- Courses
+  - [IT-Incubator](https://it-incubator.by/React-online.html)
+  - [Udemy video lectures](https://www.udemy.com/)
+  - [CS50 lectures](https://www.youtube.com/channel/UCcabW7890RKJzL968QWEykA)
+  - [FreeCodeCamp](https://www.freecodecamp.org/)
+  - [HTML Academy](https://htmlacademy.ru/)
+- Sololearn
+  - HTML, CSS, JavaScript, React & Redux, Coding for Marketers, Resposive Web Design
+- Books
+  - Eloquent JavaScript by Marijn Haverbeke
+  - JavaScript for kids by Nick Morgan
+- JavaScript
+  - https://learn.javascript.ru/
+
+---
+
+## Experience:
+
+- February 2020 – November 2021, FullStack JavaScript Developer (Tapston
+  Development)
+
+  - Write clean and easy to read code;
+  - Develop web-applications, mobile applications and backend development;
+  - Reviewing pull-requests;
+  - Interviewing and teaching Trainee JavaScript developers;
+
+- September 2019 – February 2020, Trainee JavaScript Developer (IT-Incubator)
+  - Learning JavaScript, HTML, CSS and other technologies;
+  - Develop web-applications;
+- September 2018 – August 2019, Fixed-line specialist (A1-velcom)
+
+  - Connect fixed-line connection and home internet;
+  - Sale company product;
+  - Write documentation;
+
+- May 2017 – June 2018, Industrial training instruction (McDonalds)
+  - Instruct workers;
+  - Cook restaurant products;
+  - Work on the positions;
+
+---
+
+## Languages:
+
+- English - B1
+- Belarussian - Native
+- Russian - Native
