@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-li {
-  list-style-type: none;
-}
-
 body {
   width: 100%;
   max-width: 1140px;
