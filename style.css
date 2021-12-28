@@ -1,10 +1,46 @@
+/* --- Variables --- */
+
+:root {
+  --dark-grey: #0e0e0e;
+  --aqua: #00ffd9;
+}
+
+/* --- Initial styles --- */
+
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Press Start 2P";
+  font-size: 14px;
+  color: var(--aqua);
+}
+
+/* --- Particles JS styles --- */
+
+#particles-js {
+  position: absolute;
   width: 100%;
-  max-width: 1140px;
+  height: 100%;
+  background-color: var(--dark-grey);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* --- Other styles --- */
+
+.container {
+  max-width: 1440px;
   margin: 0 auto;
-  text-align: center;
 }
