@@ -124,6 +124,15 @@ body {
   justify-content: space-between;
 }
 
+.intro__hi,
+.intro__position {
+  font-size: 20px;
+}
+
+.intro__name {
+  font-size: 28px;
+}
+
 .intro__avatar {
   border-radius: 50%;
   cursor: pointer;
