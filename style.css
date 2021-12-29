@@ -2,6 +2,7 @@
 
 :root {
   --dark-grey: #0e0e0e;
+  --black: #030303;
   --aqua: #00ffd9;
 }
 
@@ -38,9 +39,99 @@ body {
   background-position: 50% 50%;
 }
 
-/* --- Other styles --- */
+/* --- Containers styles --- */
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+/* --- Header styles --- */
+
+.header {
+  position: sticky;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  background: rgba(20, 20, 20, 0.8);
+  z-index: 4;
+}
+
+/* --- Nav styles --- */
+
+.nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  list-style-type: none;
+}
+
+.nav__link {
+  margin: 0 0 0 32px;
+}
+
+.nav__link,
+.nav__nickname {
+  position: relative;
+  text-decoration: none;
+  color: var(--aqua);
+  transition: 0.3s;
+  padding: 16px 0;
+}
+
+.nav__link:hover,
+.nav__nickname:hover {
+  opacity: 0.6;
+}
+
+.nav__link::before,
+.nav__nickname::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  right: 0;
+  height: 3px;
+  bottom: 0px;
+  background: var(--aqua);
+  transition: width ease-in-out 0.6s;
+}
+
+.nav__link:hover::before,
+.nav__nickname:hover::before {
+  width: 100%;
+}
+
+/* --- Intro section styles --- */
+
+.intro {
+  position: relative;
+  padding: 120px 0 0 0;
+}
+
+.intro__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro__avatar {
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  outline: 4px solid var(--aqua);
+  transition: 0.6s;
+}
+
+.intro__avatar:hover {
+  transform: scale(1.2);
 }
