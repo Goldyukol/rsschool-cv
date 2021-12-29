@@ -166,6 +166,18 @@ body {
   transform: scale(1.2);
 }
 
+/* --- Summary section styles --- */
+
+.summary {
+  position: relative;
+  padding: 120px 0 0 0;
+}
+
+.summary__text {
+  padding: 48px 0;
+  line-height: 32px;
+}
+
 /* --- Skills section styles --- */
 
 .skills {
