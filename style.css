@@ -96,6 +96,15 @@ body {
   content: ">";
 }
 
+/* --- Divider block styles --- */
+
+.divider {
+  width: 50px;
+  height: 4px;
+  background: var(--aqua);
+  border-radius: 10px;
+}
+
 /* --- Header block styles --- */
 
 .header {
@@ -296,10 +305,6 @@ body {
 
 .experience__divider {
   margin: 16px 0;
-  width: 50px;
-  height: 4px;
-  background: var(--aqua);
-  border-radius: 10px;
 }
 
 .experience__position {
@@ -316,11 +321,32 @@ body {
   margin: 16px 0 0 0;
 }
 
-/* --- Experience section styles --- */
+/* --- Languages section styles --- */
 
-.languages {
-  
+.languages__wrapper {
+  padding: 48px 0;
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 24px;
 }
+
+.languages__item {
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.languages__item:hover {
+  transform: scale(1.2);
+}
+
+.languages__divider {
+  margin: 10px auto;
+}
+
+/* --- Education section styles --- */
 
 /* --- Footer --- */
 
