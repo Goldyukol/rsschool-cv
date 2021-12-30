@@ -50,6 +50,34 @@ body {
   margin: 0 auto;
 }
 
+/* --- Section block styles --- */
+
+.section {
+  position: relative;
+  padding: 120px 0 0 0;
+}
+
+/* --- Button block styles --- */
+
+.button {
+  padding: 8px;
+  width: 100px;
+  background: transparent;
+  color: var(--aqua);
+  border: 4px solid var(--aqua);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
+.button:hover {
+  color: var(--dark-grey);
+  box-shadow: inset 0 -40px 0 var(--aqua);
+  transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
 /* --- Tag block styles --- */
 
 .tag {
@@ -57,6 +85,7 @@ body {
   font-size: 18px;
   font-weight: normal;
   text-align: center;
+  margin: 0;
 }
 
 .tag:before {
@@ -134,11 +163,6 @@ body {
 
 /* --- Intro section styles --- */
 
-.intro {
-  position: relative;
-  padding: 120px 0 0 0;
-}
-
 .intro__wrapper {
   display: flex;
   align-items: center;
@@ -168,22 +192,17 @@ body {
 
 /* --- Summary section styles --- */
 
-.summary {
-  position: relative;
-  padding: 120px 0 0 0;
-}
-
 .summary__text {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
   padding: 48px 0;
   line-height: 32px;
 }
 
 /* --- Skills section styles --- */
-
-.skills {
-  position: relative;
-  padding: 120px 0 0 0;
-}
 
 .skills__wrapper {
   padding: 48px 0;
@@ -217,6 +236,35 @@ body {
 
 .skills__img:hover {
   transform: scale(1.2);
+}
+
+/* --- Projects section styles --- */
+
+.projects__wrapper {
+  padding: 48px 0;
+}
+
+.projects__item {
+  margin: 24px 0 0 0;
+  padding: 40px;
+  border: 4px solid var(--aqua);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.projects__item:first-child {
+  margin: 0;
+}
+
+.projects__item-descr {
+  margin-top: 16px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.projects__item-btn {
+  margin-top: 12px;
 }
 
 /* --- Footer --- */
