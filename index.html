@@ -28,7 +28,15 @@
       href="./assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+    rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/base16/railscasts.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
     <title>Yury Kalenkou CV</title>
   </head>
 
@@ -386,7 +394,7 @@
 
       <section class="section languages">
         <div class="container">
-          <h2 class="tag">/languages</h2>
+          <h2 class="tag">languages</h2>
           <div class="languages__wrapper">
             <div class="languages__item">
               <div class="languages__item-text">English</div>
@@ -407,14 +415,77 @@
           <span class="tag">/languages</span>
         </div>
       </section>
+
+      <section class="section education">
+        <div class="container">
+          <h2 class="tag">education</h2>
+          <div class="education__wrapper">
+            <div class="education__item">
+              <span class="education__date">December 2021 - now</span>
+              <span class="education__name">Front-end developer</span>
+              <span class="education__resource">RS-School</span>
+            </div>
+            <div class="education__item">
+              <span class="education__date">October 2021 - now</span>
+              <span class="education__name">NodeJS developer</span>
+              <span class="education__resource">RS-School</span>
+            </div>
+            <div class="education__item">
+              <span class="education__date">October 2019 - February 2020</span>
+              <span class="education__name">React JS developer</span>
+              <span class="education__resource">IT-Incubator</span>
+            </div>
+            <div class="education__item">
+              <span class="education__date">September 2016 - June 2020</span>
+              <span class="education__name">Tourism and Museum business</span>
+              <span class="education__resource">BSUCA</span>
+            </div>
+          </div>
+          <span class="tag">/education</span>
+        </div>
+      </section>
+
+      <section class="section code">
+        <div class="container">  
+        <h2 class="tag">code</h2>
+          <div class="code__wrapper">
+            <pre>
+              <code class="language-javascript code__item">
+                function findSmallestIndex(array) {
+                  let smallestElement = array[0];
+                  let smallestIndex = 0;
+                
+                  for (let i = 1; i < array.length; i++) {
+                    if (array[i] < smallestElement) {
+                      smallestElement = array[i];
+                      smallestIndex = i;
+                    }
+                  }
+                
+                  return smallestIndex;
+                }
+                
+                function selectionSort(array) {
+                  let sortedArray = [];
+                  let length = array.length;
+                
+                  for (let i = 0; i < length; i++) {
+                    let smallestIndex = findSmallestIndex(array);
+                    sortedArray.push(array.splice(smallestIndex, 1)[0]);
+                  }
+                
+                  return sortedArray;
+                }
+                
+                console.log(selectionSort([5, 3, 6, 2, 10]));
+              </code>
+            </pre>
+          <span class="tag">/code</span>
+      </section>
     </main>
 
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
-
-    <!-- Import Particles.js and app.js files -->
-
+    <!-- Import js files -->
+   
     <script src="js/particles.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
