@@ -33,10 +33,7 @@
     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/base16/railscasts.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
+
     <title>Yury Kalenkou CV</title>
   </head>
 
@@ -96,6 +93,8 @@
               >
             </div>
             <img
+              width="420"
+              height="420"
               src="./assets/images/avatar.jpg"
               alt="avatar"
               class="intro__avatar"
@@ -455,7 +454,7 @@
       </section>
 
       <section id="code" class="section code">
-        <div class="container">  
+        <div class="container">
         <h2 class="tag">code</h2>
           <div class="code__wrapper">
             <pre class="code__item-container">
@@ -463,30 +462,30 @@
                 function findSmallestIndex(array) {
                   let smallestElement = array[0];
                   let smallestIndex = 0;
-                
+
                   for (let i = 1; i < array.length; i++) {
                     if (array[i] < smallestElement) {
                       smallestElement = array[i];
                       smallestIndex = i;
                     }
                   }
-                
+
                   return smallestIndex;
                 }
-                
+
                 function selectionSort(array) {
                   let sortedArray = [];
                   let length = array.length;
-                
+
                   for (let i = 0; i < length; i++) {
                     let smallestIndex = findSmallestIndex(array);
                     sortedArray.push(
                       array.splice(smallestIndex, 1)[0]);
                   }
-                
+
                   return sortedArray;
                 }
-                
+
                 console.log(selectionSort([5, 3, 6, 2, 10]));
               </code>
             </pre>
@@ -516,9 +515,13 @@
     </footer>
 
     <!-- Import js files -->
-   
+
     <script src="js/particles.min.js"></script>
     <script src="js/app.min.js"></script>
     <script src="js/burger-menu.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
