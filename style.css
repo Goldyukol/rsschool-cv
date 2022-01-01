@@ -131,7 +131,10 @@ body {
   display: flex;
 }
 
-.nav__item {
+.nav__item,
+.nav__nickname {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 20px;
   list-style-type: none;
 }
 
@@ -160,7 +163,7 @@ body {
   width: 0;
   right: 0;
   height: 3px;
-  bottom: 0px;
+  bottom: 8px;
   background: var(--aqua);
   transition: width ease-in-out 0.6s;
 }
@@ -372,7 +375,7 @@ body {
 /* --- Code section styles --- */
 
 .code__wrapper {
-  padding: 48px 0;
+  padding: 48px 0 0 0;
 }
 
 .code__item {
@@ -384,8 +387,36 @@ body {
 
 .footer {
   margin: 120px 0 0 0;
-  height: 80px;
   width: 100%;
-  background: red;
+  background: rgba(20, 20, 20, 0.8);
   position: relative;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.footer__contact-item {
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.footer__contact-item:hover {
+  opacity: 0.5;
+}
+
+.footer__author {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--aqua);
+  cursor: text;
+}
+
+.footer__rs-school {
+  width: 80px;
 }
