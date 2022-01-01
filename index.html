@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+    rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/base16/railscasts.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Yury Kalenkou CV</title>
+  </head>
+
+  <body>
+    <!-- Use #id for JS particles background -->
+
+    <div id="particles-js"></div>
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="https://github.com/goldyukol" target="_blank" class="nav__nickname">Goldyukol</a>
+          <div class="hamburger">
+            <span class="hamburger__item"></span>
+            <span class="hamburger__item "></span>
+            <span class="hamburger__item"></span>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#summary" class="nav__link">Summary</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#languages" class="nav__link">Languages</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#code" class="nav__link">Code</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section intro">
+        <div class="container">
+          <div class="intro__wrapper">
+            <div class="intro__name">
+              <span class="intro__hi">Hey!</span>
+              <h1 class="intro__name">My name is Yura Kalenkou</h1>
+              <span class="intro__position">
+                FullStack JavaScript Developer</span
+              >
+            </div>
+            <img
+              width="420"
+              height="420"
+              src="./assets/images/avatar.jpg"
+              alt="avatar"
+              class="intro__avatar"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="summary" class="section summary">
+        <div class="container">
+          <h2 class="tag">summary</h2>
+          <p class="summary__text">
+            I am a highly competent IT professional with a proven track record
+            in JavaScript development, React , React Native, NextJS, NodeJS,
+            MongoDB. I have strong technical skills as well as excellent
+            interpersonal skills, enabling me to interact with a wide range of
+            clients. I am eager to be challenged in order to grow and further
+            improve my IT skills. My greatest passion in life is using my
+            technical know-how to benefit other people and organizations.
+          </p>
+          <span class="tag">/summary</span>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="container">
+          <h2 class="tag">skills</h2>
+          <div class="skills__wrapper">
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">HTML</figcaption>
+              <img
+                src="./assets/images/skills/html.svg"
+                alt="html/css"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">CSS</figcaption>
+              <img
+                src="./assets/images/skills/css.svg"
+                alt="css"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">SASS/SCSS</figcaption>
+              <img
+                src="./assets/images/skills/sass.svg"
+                alt="sass/scss"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">Gulp</figcaption>
+              <img
+                src="./assets/images/skills/gulp.svg"
+                alt="gulp"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">JavaScript</figcaption>
+              <img
+                src="./assets/images/skills/js.svg"
+                alt="javascript"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">TypeScript</figcaption>
+              <img
+                src="./assets/images/skills/ts.svg"
+                alt="typescript"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">React</figcaption>
+              <img
+                src="./assets/images/skills/react.svg"
+                alt="react"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">React Native</figcaption>
+              <img
+                src="./assets/images/skills/react-native.svg"
+                alt="react-native"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">Redux</figcaption>
+              <img
+                src="./assets/images/skills/redux.svg"
+                alt="redux"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">NextJS</figcaption>
+              <img
+                src="./assets/images/skills/next-js.svg"
+                alt="next-js"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">NodeJS</figcaption>
+              <img
+                src="./assets/images/skills/node-js.svg"
+                alt="node-js"
+                class="skills__img"
+              />
+            </figure>
+            <figure class="skills__item">
+              <figcaption class="skills__item-descr">MongoDB</figcaption>
+              <img
+                src="./assets/images/skills/mongo.svg"
+                alt="mongo-db"
+                class="skills__img"
+              />
+            </figure>
+          </div>
+          <span class="tag">/skills</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="tag">projects</h2>
+          <div class="projects__wrapper">
+            <article class="projects__item">
+              <div class="projects__item-title">Pulse</div>
+              <p class="projects__item-descr">
+                Site for tracking your physical activity. This project can help
+                update physical skills and then can buy pulsometer. Used
+                technologies: HTML/CSS, JavaScript, Gulp and some jQuery libs.
+              </p>
+              <a href="https://github.com/goldyukol/pulse" target="_blank">
+                <button class="button projects__item-btn">View</button>
+              </a>
+            </article>
+            <article class="projects__item">
+              <div class="projects__item-title">Uber</div>
+              <p class="projects__item-descr">
+                Landing page site for Uber taxi company. User technologies:
+                HTML/CSS, SASS, Bootstrap.
+              </p>
+              <a href="https://github.com/goldyukol/uber" target="_blank">
+                <button class="button projects__item-btn">View</button>
+              </a>
+            </article>
+            <article class="projects__item">
+              <div class="projects__item-title">Ciphering CLI Tool</div>
+              <p class="projects__item-descr">
+                Ciphering CLI Tool - nodeJS console application. The application
+                is created by these three encryptions and rules: Caesar cipher,
+                Atbash cipher, ROT-8 as variation of ROT-13. User technologies:
+                NodeJS and some libs.
+              </p>
+              <a
+                href="https://github.com/goldyukol/ciphering-cli-tool"
+                target="_blank"
+              >
+                <button class="button projects__item-btn">View</button>
+              </a>
+            </article>
+            <article class="projects__item">
+              <div class="projects__item-title">Social Relab</div>
+              <p class="projects__item-descr">
+                Social Network for developers. Used technologies: ReactJS,
+                Redux, TypeScript and some libs.
+              </p>
+              <a
+                href="https://github.com/goldyukol/social-relab"
+                target="_blank"
+              >
+                <button class="button projects__item-btn">View</button>
+              </a>
+            </article>
+          </div>
+          <span class="tag">/projects</span>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience">
+        <div class="container">
+          <h2 class="tag">experience</h2>
+          <div class="experience__wrapper">
+            <div class="experience__item">
+              <div class="experience__company-info">
+                <div class="experience__company-date">
+                  February 2020 – November 2021
+                </div>
+                <div class="divider experience__divider"></div>
+                <div class="experience__company-name">Tapston Development</div>
+                <div class="experience__position">
+                  FullStack JavaScript Developer
+                </div>
+                <div class="experience__company-location">Belarus, Minsk</div>
+              </div>
+              <div class="experience__respons">
+                <h3 class="experience__respons-title">
+                  Main responsibilities:
+                </h3>
+                <ul>
+                  <li class="experience__respons-item">
+                    Write clean and easy to read code;
+                  </li>
+                  <li class="experience__respons-item">
+                    Develop web-applications, mobile applications and backend;
+                    development;
+                  </li>
+                  <li class="experience__respons-item">
+                    Reviewing pull-requests;
+                  </li>
+                  <li class="experience__respons-item">
+                    Interviewing and teaching Trainee JavaScript developers.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience__item">
+              <div class="experience__company-info">
+                <div class="experience__company-date">
+                  September 2019 – February 2020
+                </div>
+                <div class="divider experience__divider"></div>
+                <div class="experience__company-name">IT-Incubator</div>
+                <div class="experience__position">
+                  Trainee JavaScript Developer
+                </div>
+                <div class="experience__company-location">Belarus, Minsk</div>
+              </div>
+              <div class="experience__respons">
+                <h3 class="experience__respons-title">
+                  Main responsibilities:
+                </h3>
+                <ul>
+                  <li class="experience__respons-item">
+                    Learning JavaScript, HTML, CSS and other technologies;
+                  </li>
+                  <li class="experience__respons-item">
+                    Develop web-applications.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience__item">
+              <div class="experience__company-info">
+                <div class="experience__company-date">
+                  September 2018 – August 2019
+                </div>
+                <div class="divider experience__divider"></div>
+                <div class="experience__company-name">A1-velcom</div>
+                <div class="experience__position">Fixed-line specialist</div>
+                <div class="experience__company-location">Belarus, Minsk</div>
+              </div>
+              <div class="experience__respons">
+                <h3 class="experience__respons-title">
+                  Main responsibilities:
+                </h3>
+                <ul>
+                  <li class="experience__respons-item">
+                    Connect fixed-line connection and home internet;
+                  </li>
+                  <li class="experience__respons-item">
+                    Sale company product;
+                  </li>
+                  <li class="experience__respons-item">Write documentation.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience__item">
+              <div class="experience__company-info">
+                <div class="experience__company-date">May 2017 – June 2018</div>
+                <div class="divider experience__divider"></div>
+                <div class="experience__company-name">McDonalds</div>
+                <div class="experience__position">
+                  Industrial training instruction
+                </div>
+                <div class="experience__company-location">Belarus, Minsk</div>
+              </div>
+              <div class="experience__respons">
+                <h3 class="experience__respons-title">
+                  Main responsibilities:
+                </h3>
+                <ul>
+                  <li class="experience__respons-item">Instruct workers;</li>
+                  <li class="experience__respons-item">
+                    Cook restaurant products;
+                  </li>
+                  <li class="experience__respons-item">
+                    Work on the positions.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <span class="tag">/experience</span>
+        </div>
+      </section>
+
+      <section id="languages" class="section languages">
+        <div class="container">
+          <h2 class="tag">languages</h2>
+          <div class="languages__wrapper">
+            <div class="languages__item">
+              <div class="languages__item-text">English</div>
+              <div class="divider languages__divider"></div>
+              <div class="languages__item-lvl">B1</div>
+            </div>
+            <div class="languages__item">
+              <div class="languages__item-text">Russian</div>
+              <div class="divider languages__divider"></div>
+              <div class="languages__item-lvl">Native</div>
+            </div>
+            <div class="languages__item">
+              <div class="languages__item-text">Belarussian</div>
+              <div class="divider languages__divider"></div>
+              <div class="languages__item-lvl">Native</div>
+            </div>
+          </div>
+          <span class="tag">/languages</span>
+        </div>
+      </section>
+
+      <section id="education" class="section education">
+        <div class="container">
+          <h2 class="tag">education</h2>
+          <div class="education__wrapper">
+            <div class="education__item">
+              <span class="education__date">December 2021 - now</span>
+              <span class="education__name">Front-end developer</span>
+              <span class="education__resource">RS-School</span>
+            </div>
+            <div class="education__item">
+              <span class="education__date">October 2021 - now</span>
+              <span class="education__name">NodeJS developer</span>
+              <span class="education__resource">RS-School</span>
+            </div>
+            <div class="education__item">
+              <span class="education__date">October 2019 - February 2020</span>
+              <span class="education__name">React JS developer</span>
+              <span class="education__resource">IT-Incubator</span>
+            </div>
+            <div class="education__item">
+              <span class="education__date">September 2016 - June 2020</span>
+              <span class="education__name">Tourism and Museum business</span>
+              <span class="education__resource">BSUCA</span>
+            </div>
+          </div>
+          <span class="tag">/education</span>
+        </div>
+      </section>
+
+      <section id="code" class="section code">
+        <div class="container">
+        <h2 class="tag">code</h2>
+          <div class="code__wrapper">
+            <pre class="code__item-container">
+              <code class="language-javascript code__item">
+                function findSmallestIndex(array) {
+                  let smallestElement = array[0];
+                  let smallestIndex = 0;
+
+                  for (let i = 1; i < array.length; i++) {
+                    if (array[i] < smallestElement) {
+                      smallestElement = array[i];
+                      smallestIndex = i;
+                    }
+                  }
+
+                  return smallestIndex;
+                }
+
+                function selectionSort(array) {
+                  let sortedArray = [];
+                  let length = array.length;
+
+                  for (let i = 0; i < length; i++) {
+                    let smallestIndex = findSmallestIndex(array);
+                    sortedArray.push(
+                      array.splice(smallestIndex, 1)[0]);
+                  }
+
+                  return sortedArray;
+                }
+
+                console.log(selectionSort([5, 3, 6, 2, 10]));
+              </code>
+            </pre>
+          </div>
+          <span class="tag">/code</span>
+      </section>
+    </main>
+
+    <footer id="contacts" class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <span  class="footer__author">© 2022 by Yury Kalenkou</span>
+          <a href="https://github.com/goldyukol" target="_blank">
+            <img src="./assets/contacts/github.svg" alt="github" class="footer__contact-item">
+          </a>
+          <a href="mailto:goldyukol12@gmail.com">
+            <img src="./assets/contacts/gmail.svg" alt="gmail" class="footer__contact-item">
+          </a>
+          <a href="https://www.linkedin.com/in/yury-kalenkou-431a5b191/" target="_blank">
+            <img src="./assets/contacts/linkedin.svg" alt="linkedin" class="footer__contact-item">
+          </a>
+          <a href="https://rs.school/js/" target="_blank">
+            <img src="./assets/contacts/rs-school.svg" alt="rs-school" class="footer__contact-item footer__rs-school">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Import js files -->
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
