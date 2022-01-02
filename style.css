@@ -58,6 +58,7 @@ body {
 /* --- Button --- */
 
 .button {
+  display: block;
   padding: 8px;
   width: 100px;
   background: transparent;
