@@ -58,6 +58,7 @@ body {
 /* --- Button --- */
 
 .button {
+  display: block;
   padding: 8px;
   width: 100px;
   background: transparent;
@@ -68,6 +69,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   transition: 0.6s;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -217,6 +219,9 @@ body {
 
 .intro__avatar {
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -khtml-border-radius: 50%;
   cursor: pointer;
   object-fit: cover;
   outline: 4px solid var(--aqua);
@@ -309,7 +314,7 @@ body {
 }
 
 .projects__item-btn {
-  margin-top: 12px;
+  margin: 12px auto 0 auto;
 }
 
 /* --- Experience --- */
